@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>All Registered Students</h2>
+{% for reg in registrations %}
+  <ul>
+      <li>username: {{ reg.user_name }}</li>
+      <li>eventId: {{ reg.eventId }}</li>
+  </ul>
+{% endfor %}
+{% endblock %}

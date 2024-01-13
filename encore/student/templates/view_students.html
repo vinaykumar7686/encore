@@ -1,0 +1,19 @@
+<!-- view_students.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>All Registered Students</h2>
+{% for stud in students %}
+  <ul>
+      <li>email: {{ stud.email }}</li>
+      <li>full_name: {{ stud.full_name }}</li>
+      <li>collegeName: {{ stud.collegeName }}</li>
+      <li>graduationYear: {{ stud.graduationYear }}</li>
+      <li>dob: {{ stud.dob }}</li>
+      <li>phoneNumber: {{ stud.phoneNumber }}</li>
+      <li>referralCode: {{ stud.referralCode }}</li>
+      <li>myReferralCode: {{ stud.myReferralCode }}</li>
+  </ul>
+{% endfor %}
+{% endblock %}
